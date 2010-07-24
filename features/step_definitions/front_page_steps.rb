@@ -1,5 +1,5 @@
 Given /^I have a post$/ do
-  pending # express the regexp above with the code you wish you had
+  @post = Post.create
 end
 
 Given /^my post has title "([^"]*)"$/ do |arg1|

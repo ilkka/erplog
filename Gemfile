@@ -13,7 +13,7 @@ gem 'database_cleaner'
 gem 'cucumber'
 gem 'cucumber-rails'
 gem 'rspec', '2.0.0.beta.12'
-gem 'rspec-rails'
+gem 'rspec-rails', '2.0.0.beta.12'
 gem 'spork'
 gem 'launchy'
 

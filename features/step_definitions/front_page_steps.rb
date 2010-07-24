@@ -13,7 +13,8 @@ Given /^my post has body "([^"]*)"$/ do |body|
 end
 
 Given /^my post has author with name "([^"]*)"$/ do |author|
-  pending # express the regexp above with the code you wish you had
+  @post[:author] = User.create(:name => author)
+  @post.save
 end
 
 Given /^my post was published on "([^"]*)"$/ do |pubdate|

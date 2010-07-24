@@ -7,8 +7,9 @@ Given /^my post has title "([^"]*)"$/ do |title|
   @post.save
 end
 
-Given /^my post has body "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Given /^my post has body "([^"]*)"$/ do |body|
+  @post[:body] = body
+  @post.save
 end
 
 Given /^my post has author with name "([^"]*)"$/ do |arg1|

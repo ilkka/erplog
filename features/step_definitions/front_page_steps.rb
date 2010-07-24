@@ -18,6 +18,6 @@ Given /^my post has author with name "([^"]*)"$/ do |author|
 end
 
 Given /^my post was published on "([^"]*)"$/ do |pubdate|
-  @post[:published_on] = pubdate
+  @post[:published_on] = Date.parse(pubdate)
   @post.save
 end

@@ -10,7 +10,7 @@ Feature: Front Page
     And my post has author with name "Ilkka Laukkanen"
     And my post was published on "May 22, 2010"
     When I go to the homepage
-    Then I should see "<h2>My Post</h2>"
+    Then I should see "My Post"
     And I should see "This is my post. Back off!"
     And I should see "Ilkka Laukkanen"
     And I should see "May 22, 2010"

@@ -22,6 +22,7 @@ Feature: Post Management & Display
     And I fill in "post[body]" with "This is my other post. Eat my dust!"
     And I select "Ilkka Laukkanen" from "post[author]"
     And I fill in "post[published_on]" with "May 22, 2010"
+    And I click "Save Post"
     When I display the post
     Then I should see "My Post"
     And I should see "This is my post. Back off!"

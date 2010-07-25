@@ -16,6 +16,7 @@ Feature: Post Management & Display
     And I should see "May 22, 2010"
 
   Scenario: Create post
+    Given I have a user named "Ilkka Laukkanen"
     When I go to the post creation page
     And I fill in "post[title]" with "My Post Title"
     And I fill in "post[body]" with "This is my other post. Eat my dust!"

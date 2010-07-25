@@ -1,5 +1,4 @@
-%h2= post.title
-
-.post_body[post]= post.body
-
-.post_details[post] Written by #{post.author.name} and published on #{post.published_on.strftime('%b %d, %Y')}.
+%div[post]
+  %h2= post.title
+  .post_body= post.body
+  .post_details Written by #{post.author.name} and published on #{post.published_on.strftime('%b %d, %Y')}.

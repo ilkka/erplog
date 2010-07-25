@@ -1,3 +1,3 @@
 When /^I display the post$/ do
-  visit "/post/#{@post.id}"
+  visit "/posts/#{@post.id}"
 end

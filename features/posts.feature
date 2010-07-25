@@ -24,7 +24,7 @@ Feature: Post Management & Display
     And I fill in "post[published_on]" with "May 22, 2010"
     And I click "Save Post"
     When I display the post
-    Then I should see "My Post"
-    And I should see "This is my post. Back off!"
+    Then I should see "My Post Title"
+    And I should see "This is my other post. Eat my dust!"
     And I should see "Ilkka Laukkanen"
     And I should see "May 22, 2010"

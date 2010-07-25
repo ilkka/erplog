@@ -19,7 +19,7 @@ Feature: Post Management & Display
     When I go to the post creation page
     And I fill in "post[title]" with "My Post Title"
     And I fill in "post[body]" with "This is my other post. Eat my dust!"
-    And my post has author with name "Ilkka Laukkanen"
+    And I select "Ilkka Laukkanen" from "post[author]"
     And my post was published on "May 22, 2010"
     When I display the post
     Then I should see "My Post"

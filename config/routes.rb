@@ -1,6 +1,8 @@
 Erblog::Application.routes.draw do |map|
-  get "posts/index"
+  #get "posts/index"
 
+  map.resources :posts
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

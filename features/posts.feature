@@ -15,3 +15,14 @@ Feature: Post Management & Display
     And I should see "Ilkka Laukkanen"
     And I should see "May 22, 2010"
 
+  Scenario: Create post
+    When I go to the post creation page
+    And I fill in "post[title]" with "My Post"
+    And my post has body "This is my post. Back off!"
+    And my post has author with name "Ilkka Laukkanen"
+    And my post was published on "May 22, 2010"
+    When I display the post
+    Then I should see "My Post"
+    And I should see "This is my post. Back off!"
+    And I should see "Ilkka Laukkanen"
+    And I should see "May 22, 2010"

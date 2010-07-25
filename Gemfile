@@ -17,6 +17,9 @@ gem 'rspec-rails', '2.0.0.beta.12'
 gem 'spork'
 gem 'launchy'
 
+# haml for nicer templates
+gem 'haml'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

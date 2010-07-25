@@ -17,8 +17,8 @@ Feature: Post Management & Display
 
   Scenario: Create post
     When I go to the post creation page
-    And I fill in "post[title]" with "My Post"
-    And my post has body "This is my post. Back off!"
+    And I fill in "post[title]" with "My Post Title"
+    And I fill in "post[body]" with "This is my other post. Eat my dust!"
     And my post has author with name "Ilkka Laukkanen"
     And my post was published on "May 22, 2010"
     When I display the post

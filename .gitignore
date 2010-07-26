@@ -3,3 +3,8 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 vendor/cache/*
+
+Gemfile.lock
+capybara-*.html
+rerun.txt
+

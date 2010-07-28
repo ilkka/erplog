@@ -20,7 +20,7 @@ Feature: Post Management & Display
     When I go to the post creation page
     And I fill in "post[title]" with "My Post Title"
     And I fill in "post[body]" with "This is my other post. Eat my dust!"
-    And I select "Ilkka Laukkanen" from "post[author]"
+    And I select "Ilkka Laukkanen" from "post[author_id]"
     And I fill in "post[published_on]" with "May 23, 2010"
     And I press "Save Post"
     When I display the post

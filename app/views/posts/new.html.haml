@@ -1,8 +1,9 @@
 %h1 New post
 
 = form_for @post do |f|
-  = f.label :title
-  = f.text_field :title
-  %br/
-  = f.label :body
-  = f.text_area :body
+  .form_field
+    = f.label :title
+    = f.text_field :title
+  .form_field
+    = f.label :body
+    = f.text_area :body

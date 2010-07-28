@@ -10,3 +10,7 @@
   .form_field
     = f.label :author_id
     = f.select :author_id, User.all.map {|u| [u.name, u.id]}
+  .form_field
+    = f.label :published_on
+    = f.text_field :published_on
+  = f.submit 'Save Post'

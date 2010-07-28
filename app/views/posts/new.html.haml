@@ -7,3 +7,6 @@
   .form_field
     = f.label :body
     = f.text_area :body
+  .form_field
+    = f.label :author_id
+    = f.select :author_id, User.all.map {|u| [u.name, u.id]}

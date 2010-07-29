@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(params[:post])
+    @post = Post.new(params[:post])
     if @post.save
       redirect_to post_url(@post.id)
     else

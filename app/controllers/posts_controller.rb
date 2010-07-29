@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(params[:post])
     if @post.save
-      redirect_to "/show/#{@post.id}"
+      redirect_to post_url(@post.id)
     end
   end
 end

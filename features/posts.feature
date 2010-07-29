@@ -23,7 +23,6 @@ Feature: Post Management & Display
     And I select "Ilkka Laukkanen" from "post[author_id]"
     And I fill in "post[published_on]" with "May 23, 2010"
     And I press "Save Post"
-    When I display the post
     Then I should see "My Post Title"
     And I should see "This is my other post. Eat my dust!"
     And I should see "Ilkka Laukkanen"

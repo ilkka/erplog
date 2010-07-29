@@ -15,6 +15,8 @@ class PostsController < ApplicationController
     @post = Post.create(params[:post])
     if @post.save
       redirect_to post_url(@post.id)
+    else
+      redirect_to new_post_url
     end
   end
 end

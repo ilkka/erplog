@@ -27,3 +27,19 @@ Feature: Post Management & Display
     And I should see "This is my other post. Eat my dust!"
     And I should see "Ilkka Laukkanen"
     And I should see "May 23, 2010"
+
+  @wip
+  Scenario: Edit post
+    Given I have a user named "Ilkka Laukkanen"
+    Given I have a post
+    And my post has title "My Post"
+    And my post has body "This is my post. Back off!"
+    And my post has author with name "Ilkka Laukkanen"
+    And my post was published on "May 22, 2010"
+    When I log in as user "Ilkka Laukkanen"
+    When I display the post
+    And I press "edit"
+    Then I should see "My Post"
+    And I should see "This is my post. Back off!"
+    And I should see "Ilkka Laukkanen"
+    And I should see "May 22, 2010"

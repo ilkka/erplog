@@ -20,6 +20,11 @@ gem 'launchy'
 # haml for nicer templates
 gem 'haml'
 
+if RUBY_PLATFORM =~ /mswin/i or RUBY_PLATFORM =~ /mingw/i
+  # win32 for shits and giggles
+  gem 'win32console'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

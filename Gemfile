@@ -25,6 +25,9 @@ if RUBY_PLATFORM =~ /mswin/i or RUBY_PLATFORM =~ /mingw/i
   gem 'win32console'
 end
 
+# devise authentication fw
+gem 'devise', '1.1.1'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

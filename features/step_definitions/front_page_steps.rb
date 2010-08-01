@@ -13,7 +13,13 @@ Given /^my post has body "([^"]*)"$/ do |body|
 end
 
 Given /^my post has author with name "([^"]*)"$/ do |author|
-  @post[:author_id] = User.create(:name => author).id
+  u = User.new(:email => 'foo@bar.com',
+               :login => 'foo',
+               :password => 'foobarbar',
+               :password_confirmation => 'foobarbar',
+               :name => author)
+  u.save!
+  @post[:author_id] = u.id
   @post.save
 end
 

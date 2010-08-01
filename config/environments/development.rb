@@ -17,6 +17,6 @@ Erblog::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
-  # deprecation warnings to stderr
+  # deprecation warnings to log
   config.active_support.deprecation = :log
 end

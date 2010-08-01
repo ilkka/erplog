@@ -3,5 +3,10 @@ When /^I display the post$/ do
 end
 
 Given /^I have a user named "([^"]*)"$/ do |name|
-  User.create(:name => name)
+  u = User.create(:email => 'foo@bar.com',
+                  :login => 'foo',
+                  :password => 'foobarbar',
+                  :password_confirmation => 'foobarbar')
+  u.name = name
+  u.save!
 end

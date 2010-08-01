@@ -17,6 +17,9 @@ Erblog::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
+  # configure default url for mailer
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
   # deprecation warnings to log
   config.active_support.deprecation = :log
 end

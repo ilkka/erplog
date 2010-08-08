@@ -1,11 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.rc'
+gem 'rails', '3.0.0.beta'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+
+# mongo!
+gem 'mongo_mapper'
 
 # cucumber + rspec
 gem 'capybara'
@@ -26,7 +29,7 @@ if RUBY_PLATFORM =~ /mswin/i or RUBY_PLATFORM =~ /mingw/i
 end
 
 # devise authentication fw
-gem 'devise', '1.1.1'
+gem 'devise', '1.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
